@@ -7,7 +7,7 @@ import { axios } from "axios";
 
 export const FETCHING_SMURFS = 'FETCHING_SMURFS';
 export const FETCHED_SMURFS = 'FETCHED_SMURFS';
-export const ERROR_FETCHING_SMURF = 'ERROR_FETCHING_SMURFs';
+export const ERROR_FETCHING_SMURFS = 'ERROR_FETCHING_SMURFS';
 
 /*
   For this project you'll need at least 2 action creators for the main portion,
@@ -35,7 +35,7 @@ export const fetchSmurfs = () => {
       })
       .catch(err => {
         dispatch({
-          type: ERROR_FETCHING_SMURF,
+          type: ERROR_FETCHING_SMURFS,
           payload: err,
         })
       })
